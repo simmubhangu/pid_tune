@@ -1,5 +1,5 @@
 
-# Requirement for this package
+### Requirement for this package
 1. tkinter python library. 
 
     ```python
@@ -7,7 +7,7 @@
     ```
 [For more information visit here](http://www.greenteapress.com/thinkpython/swampy/install.html)
 
-## How to use This package
+### How to use This package
 1. Import the msg in your script. 
     ```python
     from pid_tune.msg import PidTune
