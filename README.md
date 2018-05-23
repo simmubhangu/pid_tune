@@ -31,3 +31,13 @@
 		self.ki_y = data.Ki
 		self.ki_z = data.Ki
   ```
+
+### Package information for tuning drone
+
+#### Publications:
+**/pid_tuning_pitch** *(pid_tune/PidTune)* <br />
+**/pid_tuning_roll** *(pid_tune/PidTune)* <br />
+**/pid_tuning_yaw** *(pid_tune/PidTune)* <br />
+**/pid_tuning_altitude** *(pid_tune/PidTune)* <br />
+
+### Run pid_tune.launch to run the pid_tune node
