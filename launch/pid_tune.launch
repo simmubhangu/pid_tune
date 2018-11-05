@@ -1,4 +1,0 @@
-<launch>
-  <node name="tune_pid" pkg="pid_tune" type="pid_tune_gui.py" output="screen" />
-
-</launch>
