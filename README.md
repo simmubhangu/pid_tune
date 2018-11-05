@@ -40,4 +40,7 @@
 **/pid_tuning_yaw** *(pid_tune/PidTune)* <br />
 **/pid_tuning_altitude** *(pid_tune/PidTune)* <br />
 
-### Run pid_tune.launch to run the pid_tune node
+### Run the ros node by the following command
+  ```
+   rosrun pid_tune pid_tune_gui.py
+  ```
