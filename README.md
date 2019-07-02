@@ -35,12 +35,18 @@
 ### Package information for tuning drone
 
 #### Publications:
-**/pid_tuning_pitch** *(pid_tune/PidTune)* <br />
-**/pid_tuning_roll** *(pid_tune/PidTune)* <br />
-**/pid_tuning_yaw** *(pid_tune/PidTune)* <br />
-**/pid_tuning_altitude** *(pid_tune/PidTune)* <br />
+**/$pid_params** *(pid_tune/PidTune)* <br />
+
+$ denotes corresponding letter for the pid. eg: ppid_params for pitch pid parameters
+
 
 ### Run the ros node by the following command
++ For differential drive robot, you can run the following node
   ```
-   rosrun pid_tune pid_tune_gui.py
+   rosrun pid_tune pid_tune_differential.py
+  ```
++ For drone, you can run the following node
+
+  ```
+   rosrun pid_tune pid_tune_drone.py
   ```
