@@ -14,21 +14,18 @@ class Pid_dim():
 		self.root.attributes("-topmost", True)
 		self.root.geometry('250x210') 
 
-		self.scale = Scale(self.root, orient='horizontal', from_=0, to=500, label= 'Kp',width = "20", length = "300",troughcolor="red",sliderlength="15")
-		self.scale1 =Scale(self.root, orient='horizontal', from_=0, to=1000, label= 'Ki',width = "20", length = "300",troughcolor="green",sliderlength="15")
-		self.scale2 =Scale(self.root, orient='horizontal', from_=0, to=500, label= 'Kd',width = "20", length = "300", troughcolor="blue",sliderlength="15")
+		self.scale = Scale(self.root, orient='horizontal', from_=0, to=500, command = self.set_value, label= 'Kp',width = "20", length = "300",troughcolor="red",sliderlength="15")
+		self.scale1 =Scale(self.root, orient='horizontal', from_=0, to=1000, command = self.set_value, label= 'Ki',width = "20", length = "300",troughcolor="green",sliderlength="15")
+		self.scale2 =Scale(self.root, orient='horizontal', from_=0, to=500, command = self.set_value, label= 'Kd',width = "20", length = "300", troughcolor="blue",sliderlength="15")
 
 		self.scale.pack()
 		self.scale1.pack()
 		self.scale2.pack()
-
-		Button(self.root, text='set_value', command=self.set_value).pack()
-		# print "initialized"
-
-	def set_value(self):
+	def set_value(self, event):
 
 		self.pid_params.Kp = self.scale.get()
 		self.pid_params.Ki = self.scale1.get()
 		self.pid_params.Kd = self.scale2.get()
 		self.pub_pid.publish(self.pid_params)
+
 		

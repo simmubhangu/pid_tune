@@ -17,7 +17,8 @@ if __name__ == '__main__':
 		ppid.root.mainloop()
 	elif pitch_ui and roll_ui:
 		ppid = Pid_dim("Pitch","ppid_params",1000) #Title of the ui, topic name of the publisher, queue size
-		rpid = Pid_dim("Roll","rpid_params",1000)		
+		rpid = Pid_dim("Roll","rpid_params",1000)
+		ppid.root.mainloop()		
 	elif pitch_ui and yaw_ui:
 		ppid = Pid_dim("Pitch","ppid_params",1000) #Title of the ui, topic name of the publisher, queue size
 		ypid = Pid_dim("Yaw","ypid_params",1000)
