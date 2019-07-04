@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from Tkinter import *
-from sepl_differential_drive.msg import PidTune
+from pid_tune.msg import PidTune
 import rospy
 
 
