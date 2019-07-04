@@ -8,7 +8,7 @@
 
     </node>
 
-
+<!--
     <node name="tune_pid_diffrential" type="pid_tune_differential.py" pkg="pid_tune">
 
     <param name="lpid_ui_enable" value="true"/>
@@ -16,5 +16,6 @@
   
 
     </node>
+-->
 
  </launch>

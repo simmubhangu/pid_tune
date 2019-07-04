@@ -1,0 +1,20 @@
+<launch>
+<!--
+    <node name="tune_pid_drone" type="pid_tune_drone.py" pkg="pid_tune">
+
+    <param name="ppid_ui_enable" value="true"/>
+    <param name="rpid_ui_enable" value="true"/>
+    <param name="ypid_ui_enable" value="true"/>
+
+    </node>
+-->
+
+    <node name="tune_pid_diffrential" type="pid_tune_differential.py" pkg="pid_tune">
+
+    <param name="lpid_ui_enable" value="true"/>
+    <param name="rpid_ui_enable" value="true"/>
+  
+
+    </node>
+
+ </launch>
