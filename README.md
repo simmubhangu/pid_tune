@@ -31,6 +31,7 @@
 		self.ki_y = data.Ki
 		self.ki_z = data.Ki
   ```
+<<<<<<< HEAD
 
 ### Package information for tuning drone
 
@@ -50,3 +51,5 @@ $ denotes corresponding letter for the pid. eg: ppid_params for pitch pid parame
   ```
    rosrun pid_tune pid_tune_drone.py
   ```
+=======
+>>>>>>> 2e16fcb0f1bc70e87dc4a2e9b560a2b8ebfd9929
