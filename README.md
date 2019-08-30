@@ -39,7 +39,16 @@
 
 $ denotes corresponding letter for the pid. eg: ppid_params for pitch pid parameters
 
+### launch the ros node by the following command
++ For differential drive robot, you can run the following node
+  ```
+   roslaunch pid_tune pid_tune_diff.launch
+  ```
++ For drone, you can run the following node
 
+  ```
+   roslaunch pid_tune pid_tune_drone.launch
+  ```
 ### Run the ros node by the following command
 + For differential drive robot, you can run the following node
   ```
@@ -50,3 +59,4 @@ $ denotes corresponding letter for the pid. eg: ppid_params for pitch pid parame
   ```
    rosrun pid_tune pid_tune_drone.py
   ```
+
