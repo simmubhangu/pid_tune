@@ -4,7 +4,7 @@
 
     <param name="ppid_ui_enable" value="true"/>
     <param name="rpid_ui_enable" value="true"/>
-    <param name="ypid_ui_enable" value="true"/>
+    <param name="ypid_ui_enable" value="false"/>
     <param name="tpid_ui_enable" value="true"/>
 
     </node>

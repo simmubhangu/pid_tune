@@ -14,9 +14,9 @@ class Pid_dim():
 		self.root.attributes("-topmost", True)
 		self.root.geometry('250x210') 
 
-		self.scale = Scale(self.root, orient='horizontal', from_=0, to=500, command = self.set_value, label= 'Kp',width = "20", length = "300",troughcolor="red",sliderlength="15")
+		self.scale = Scale(self.root, orient='horizontal', from_=0, to=5000, command = self.set_value, label= 'Kp',width = "20", length = "300",troughcolor="red",sliderlength="15")
 		self.scale1 =Scale(self.root, orient='horizontal', from_=0, to=1000, command = self.set_value, label= 'Ki',width = "20", length = "300",troughcolor="green",sliderlength="15")
-		self.scale2 =Scale(self.root, orient='horizontal', from_=0, to=500, command = self.set_value, label= 'Kd',width = "20", length = "300", troughcolor="blue",sliderlength="15")
+		self.scale2 =Scale(self.root, orient='horizontal', from_=0, to=5000, command = self.set_value, label= 'Kd',width = "20", length = "300", troughcolor="blue",sliderlength="15")
 
 		self.scale.pack()
 		self.scale1.pack()
