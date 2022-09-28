@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from Tkinter import *
 from pid_tune.msg import PidTune
 import rospy
